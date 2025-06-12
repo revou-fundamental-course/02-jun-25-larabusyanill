@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website - Lara Busyanil</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+</head>
+
+<body>
+  <!-- Header -->
+    <header class="main-header">
+        <img class="logo" src="asset/profil.png" />
+        <nav>
+        <a href="#home">Home</a>
+        <a href="#myprofile">My Profile</a>
+        <a href="#messageme">Message Me</a>
+      </nav>
+    </header>
+  
+    <main>
+      <!-- Home Section --> 
+      <section id="home">
+        <h1>Hi, Welcome To  <span class="highlight">My Portfolio Website!</span></h1>
+        <div class="img-slide">
+          <img class="autoslideshow" src="asset/1.jpeg" />
+          <img class="autoslideshow" src="asset/2.jpeg" />
+          <img class="autoslideshow" src="asset/3.jpg" />
+        </div>
+      </section>
+  
+      <!-- My Profile Section -->
+      <section id="myprofile">
+        <h1>My Profile</h1>
+           <div class="card-container">
+            <div class="card h2">
+               <h2>About Me</h2>
+               <p>A recent graduate with a Bachelor's Degree in Information System from Andalas University. Experienced in intership, student organization and achievements in UI/UX Design. Skilled in user interface design, database, computer programming, and data management. Commited to continous learning and growth in the field of Information Technology.</p>
+            </div>
+            <div class="card h2">
+                <h2>Organization Experience</h2>
+                <p>Staff of Informatic and Media Division at Information System Student Association | 2022 </p>
+                <h2>Internship Experience</h2>
+                <p>Internship at Dinas Komunikasi, Informatika dan Statistik Provinsi Sumatera Barat | 2023</p>            
+            </div>           
+           </div>
+           <div class="card2-container">
+            <div class="card2 h2">
+               <h2>Education</h2>
+               <p>Andalas University | 2020 - 2024</p>
+           </div>           
+            <div class="card2 h2">
+               <h2>Contact Me</h2>
+               <p>Email : larabusyanil@gmail.com</p>
+               <p>Phone Number : +6282169739163</p>
+           </div>           
+          </div>
+      </section>
+  
+      <!-- Message Me Section -->
+      <section id="messageme">
+        <h1>Message Me</h1>
+        <form name="message-form" onsubmit="return validateForm()">
+          <div>
+            <label>Name : </label>
+            <input type="text" name="nama" placeholder="Enter Name" />
+          </div>
+          <div>
+            <label>Birth Date :</label>
+            <input type="date" name="tanggal_lahir" />
+          </div>
+          <div>
+            <label>Gender :</label><br />
+            <input type="radio" id="male" name="jenis_kelamin" value="Male" />
+            <label for="laki_laki">Male</label>
+            <input type="radio" id="female" name="jenis_kelamin" value="Female" />
+            <label for="perempuan">Female</label>
+          </div>
+          <div>
+            <label>Message :</label>
+            <textarea type="text" name="pesan" placeholder="Enter Message"></textarea>
+          </div>
+          <div>
+            <input type="submit" value="Submit" />
+          </div>
+        </form>
+
+  <!-- form output -->
+        <div class="form-output">    
+        <form>
+          <div>
+            <label>Name : </label>
+            <input type="text" id="getNama" readonly/>
+          </div>
+          <div>
+            <label>Birth Date :</label>
+            <input type="date" id="getTanggalLahir" readonly/>
+          </div>
+          <div>
+            <label>Gender :</label><br />
+            <input type="text" id="getJenisKelamin" readonly/>
+          </div>
+          <div>
+            <label>Message :</label>
+            <input type="text" id="getPesan" readonly/>
+          </div>
+        </form>
+        </div>
+      </section>
+    </main>
+
+  <!-- Footer -->
+        <footer>
+          <p>&copy; Lara Busyanil</p>
+        </footer>
+ 
+
+    <script src="js/script.js"></script>
+  </body>
+</html> 
